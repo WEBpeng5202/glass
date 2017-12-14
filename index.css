@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.sImg,.bImg{
+    width: 960px;
+    height: 540px;
+    border:1px solid  #c7254e;
+    margin-right: 30px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.bImg{
+    /*display: none;*/
+}
+.bImg>img{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.sImg>img{
+    width: 100%;
+}
+.sImg>.mask{
+    width: 192px;
+    height: 108px;
+    background-color: #000;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 122;
+    opacity: .3;
+    /*display: none;*/
+}
+.sImg>.opacity{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(78, 22, 44, 0.3);
+    z-index: 999;
+}
